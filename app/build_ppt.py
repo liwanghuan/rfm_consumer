@@ -205,16 +205,18 @@ def pipeline_slide(slide):
 s = title_slide(
     "AI Agents for Retail Analytics:\nRFM Customer Segmentation & Automated Reporting",
     "Guest Lecture · Data Analytics in Business · National University of Singapore",
-    "TikTok Engineer (AI Agents) · PhD Student, NTU Singapore")
+    "Software Engineer @ TikTok (AI) · Part-time PhD Student, NTU Singapore")
 note(s, "Welcome everyone. Today: how a classic business-analytics technique "
         "(RFM) becomes a fully automated AI agent. Half concepts, half live demo.")
 
 # 2 — about me
 s = content_slide("About your lecturer")
 bullets(s, [
-    "Software engineer at TikTok — building AI agents for data analytics",
-    (1, "Agents that clean data, run analyses, and write reports autonomously"),
-    "PhD student at NTU Singapore",
+    "Software engineer at TikTok — focused on AI development",
+    (1, "7+ years of industry experience"),
+    (1, "Building AI agents that clean data, run analyses, and write "
+        "reports autonomously"),
+    "Part-time PhD student at NTU Singapore",
     (1, "Research interests: LLM-based agents and applied data analytics"),
     "Why this lecture?",
     (1, "RFM is the single most-used segmentation method in retail CRM"),
@@ -223,6 +225,28 @@ bullets(s, [
 ])
 note(s, "Brief intro — emphasise the industry + research mix; invite questions "
         "any time.")
+
+# 2b — background: a real industry scenario
+s = content_slide("Background — why this lecture? A real industry scenario")
+bullets(s, [
+    "This lecture is built around a REAL industry scenario — not a "
+    "textbook exercise",
+    (1, "The dataset, the pipeline, and the deliverables mirror what "
+        "analytics teams at tech & retail companies actually do"),
+    "In industry, data never arrives clean:",
+    (1, "Duplicates, missing ids, mixed date formats, refunds, "
+        "fat-finger errors — you will see all of them today"),
+    "In industry, analysis is never one-off:",
+    (1, "Marketing asks for the same segmentation every month — "
+        "which is exactly why automation and agents matter"),
+    "In industry, the output is never just numbers:",
+    (1, "Stakeholders need a plain-language strategy report they can act on"),
+    "Goal today: experience the COMPLETE workflow a data team runs, "
+    "end-to-end — so you know what the job really looks like",
+], size=17)
+note(s, "Set expectations: everything in the next 2 hours is a faithful "
+        "miniature of real production analytics work — same dirty data, "
+        "same repetition pressure, same need for an actionable report.")
 
 # 3 — agenda
 s = content_slide("Today's roadmap (2 hours)")
@@ -627,7 +651,7 @@ bullets(s, [
 # 38
 s = title_slide("Thank you — questions?",
                 "Slides, code and dataset: Documents/nus_lecture",
-                "TikTok Engineer (AI Agents) · PhD Student, NTU Singapore")
+                "Software Engineer @ TikTok (AI) · Part-time PhD Student, NTU Singapore")
 
 out = Path(__file__).parent / "nus_lecture_rfm_agent.pptx"
 prs.save(out)

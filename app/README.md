@@ -14,11 +14,12 @@ automates **data cleaning → RFM segmentation → marketing strategy report**.
 | `data/retail_transactions.csv` | Sample *dirty* dataset (5.5k rows, 800 customers) |
 | `data/generate_dataset.py` | Regenerates the sample dataset |
 | `build_ppt.py` | Regenerates the slide deck |
+| `build_abstract.py` | Regenerates `nus_lecture_abstract.docx` (bio + abstract for professors) |
 
 ## Quick start
 
 ```bash
-cd ~/Documents/nus_lecture
+cd ~/PATH/TO/YOUR/CODE
 pip install -r requirements.txt
 streamlit run app.py
 ```

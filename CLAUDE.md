@@ -26,6 +26,8 @@ All code lives in `app/`:
 - `data/retail_transactions.csv` — sample *dirty* dataset (5.5k rows, 800
   customers); regenerate with `data/generate_dataset.py`.
 - `build_ppt.py` — regenerates the lecture deck `nus_lecture_rfm_agent.pptx`.
+- `build_abstract.py` — regenerates `nus_lecture_abstract.docx` (one-page bio +
+  abstract for the professors), saved at the repo root.
 
 ## Running
 
